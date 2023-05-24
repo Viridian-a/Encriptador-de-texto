@@ -1,0 +1,58 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ .general {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(168, 186, 168);
+ }
+
+.texto textarea {
+    width: 80%;
+    height: 80%;
+}
+ .texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: 'Poppins', sans-serif;    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    background-color: rgb(238, 241, 241);
+ }
+
+ .texto::placeholder {
+    color: rgb(14, 86, 14);
+ }
+
+ .texto:focus, .texto:active {
+    border: none;
+    outline: none;
+ }
+
+ .reglas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+ }
+
+ .buttons {
+
+ }
+
+ .contenedorIzq {
+
+ }
