@@ -7,30 +7,55 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(168, 186, 168);
+    background-image: url("https://www.itl.cat/pngfile/big/14-146530_awesome-wallpapers.jpg");
+    
  }
 
+ .titulopagina {
+    position: absolute;
+    color: rgb(152, 177, 227);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 2px;
+    top: 3%;
+    left: 22%;
+    font-family: 'Poppins', sans-serif;  
+    background-color: rgb(98, 46, 175);
+    padding: 17px;
+    border-radius: 9px;
+
+
+ }
 .texto textarea {
+    position: absolute;
+    left: 10%;
+    top: 8%;
     width: 80%;
-    height: 80%;
+    height: 75%;
+
 }
  .texto {
     position: absolute;
     width: 42%;
-    height: 60%;
+    height: 55%;
     left: 12%;
     top: 15%;
     border: none;
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
-    font-weight: 400;
+    border-radius: 20px;
     font-size: 28px;
     line-height: 150%;
-    background-color: rgb(238, 241, 241);
+    background-color: rgb(98, 46, 175);
+    opacity: 90%;
+    color: rgb(152, 177, 227);
+    font-weight: 600;
  }
 
+
  .texto::placeholder {
-    color: rgb(14, 86, 14);
+    color: rgb(152, 177, 227);
+    font-weight: 400;
  }
 
  .texto:focus, .texto:active {
@@ -38,7 +63,7 @@
     outline: none;
  }
 
- .reglas {
+ .texto .reglas {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,8 +72,37 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 80%;
- }
+    top: 87%;
+    font-size: 12px;
+    color: rgb(152, 177, 227);
+}
+
+.reglas #copyButton {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(152, 177, 227);
+    font-size: 24px;
+    left: 89%;
+    font-weight: 800;
+
+
+}
+
+.reglas #resetButton {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(152, 177, 227);
+    font-size: 24px;
+    top: 22%;
+    left: 82%;
+}
+
 
  .buttons {
     display: flex;
@@ -58,24 +112,31 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 70%;
  }
 
 .btn-encriptar {
+    position: absolute;
+    left: 2%;
+    top: 70%;
     align-items: center;
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
-    background-color: rgb(17, 100, 17);
+    width: 22%;
+    background-color: rgb(96, 89, 120);
     border-radius: 24px;
     font-family: 'Poppins', sans-serif;     
     font-size: 18px;
-    line-height: 19px;
+    line-height: 15px;
     text-align: center;
+    color: rgb(152, 177, 227);
 }
 
 .btn-desencriptar {
+    position: absolute;
+    left: 28%;
+    top: 70%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -83,15 +144,16 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
-    background-color: rgb(97, 218, 97);
-    border: 1px solid rgb(2, 59, 2);
+    width: 22%;
+    background-color: rgb(96, 89, 120);
+    border: 1px solid rgb(15, 3, 42);
     border-radius: 24px;
     font-family: 'Poppins', sans-serif;   
     font-weight: 400;  
     font-size: 18px;
     line-height: 19px;
     text-align: center;
+    color: rgb(152, 177, 227);
 }
 
 .btn-desencriptar:hover, .btn-encriptar:hover {
@@ -99,6 +161,33 @@
     width: 25%;
     padding: 1.5%;
 }
+
+.redes {
+    position: absolute;
+    color: rgb(152, 177, 227);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 2px;
+    top: 88%;
+    left: 19%;
+    font-family: 'Poppins', sans-serif;  
+    background-color: rgb(98, 46, 175);
+    padding: 9px;
+    border-radius: 9px;
+    opacity: 80%;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+}
+
+.redes img { 
+    width: 22px;
+    height: 22px; 
+    transform: scale(0.8);
+    text-align: center;
+    
+}
+
  .contenedorIzq {
     display: flex;
     justify-content: center;
@@ -110,15 +199,20 @@
     background-color: beige;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    background-color: rgb(98, 46, 175);
+    opacity: 90%;
 
  }
 
  .contenedorIzq img {
     position: absolute;
-    width: 80%;
+    width: 75%;
     height: 50%;
     top: 15%;
-    left: 11%;
+    left: 13%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    opacity: 86%;
+
  }
 
  .mensajeEncriptado {
@@ -130,8 +224,9 @@
     gap: 16px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 70%;
     text-align: center;
+    color: rgb(152, 177, 227);
  }
 
  .mensajeEncriptado h2 {
@@ -142,8 +237,7 @@
     font-size: 24px;
     line-height: 120%;
     text-align: center;
-    color: rgb(26, 24, 24);
- 
+    color: rgb(152, 177, 227); 
  }
 
  .mensajeEncriptado p {
@@ -154,8 +248,7 @@
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: rgb(59, 53, 53);
-    
+    color: rgb(152, 177, 227);    
  }
 
  @media (max-width: 57.5em) {

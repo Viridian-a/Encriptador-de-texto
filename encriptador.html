@@ -14,21 +14,31 @@
 </head>
 
 <body>
-
+<form>
     <div class="general">
-
+        <div class="titulopagina">
+            <h1>Encriptador de texto</h1>
+        </div>
         <div class="texto">
             <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder= "Ingrese texto aquí" ></textarea>
-        </div>
-
-        <div class="reglas">
-            <p>Solo letras minúsculas y sin acentos*</p>
-        </div>
+            <div class="reglas">
+                <p>Solo letras minúsculas y sin acentos*</p>
+                <button id="copyButton" onclick="copyText()">&#128441;</button>
+                <input type="Reset" value=&#8634; id="resetButton">
+            </div>
+        </div>  
+    </form>        
 
         <div class="buttons">
                 <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
                 <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
 
+        </div>
+
+        <div class="redes">
+            <p> &copy;2023 Diana Chacón - Challenge Oracle ONE - G5 </p>
+            <a href="https://www.linkedin.com/in/diana-chac%C3%B3n-montero-ab5529202/"><img src="img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Viridian-a"><img src="img/github.png" alt="github"></a>
         </div>
        
         <div class="contenedorIzq">

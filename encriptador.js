@@ -15,9 +15,9 @@ function encriptar() {
         document.getElementById("texto").value = textoCifrado
         tituloMensaje.textContent = "Texto encriptado con éxito";
         parrafo.textContent = "";
-        gatito.src = "https://i.pinimg.com/originals/8b/28/0f/8b280f762a58b769486a6defa01715c9.jpg";
+        gatito.src = "https://img.freepik.com/vector-gratis/pulgares-arriba-icono-tecnologia-vectorial-neon-purpura-sobre-fondo-degradado_53876-125978.jpg?w=360&t=st=1685049201~exp=1685049801~hmac=82d52607fcba0da0a7f1d926aeab0ecc9f8a34b565ff87990f729037e920a4a3";
     } else {
-        gatito.src = "https://i.pinimg.com/originals/a9/f0/41/a9f041c3a16b4de92b5480dca450f2c2.jpg";
+        gatito.src = "img/señal.png";
         tituloMensaje.textContent = "Ningún mensaje encontrado";
         parrafo.textContent = "Ingresa el párrafo que deseas encriptar o desencriptar";
         alert("Debes de ingresar un texto!");
@@ -41,12 +41,28 @@ function desencriptar() {
         document.getElementById("texto").value = textoCifrado
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
-        gatito.src = "https://i.pinimg.com/originals/8b/28/0f/8b280f762a58b769486a6defa01715c9.jpg";
+        gatito.src = "https://img.freepik.com/vector-gratis/pulgares-arriba-icono-tecnologia-vectorial-neon-purpura-sobre-fondo-degradado_53876-125978.jpg?w=360&t=st=1685049201~exp=1685049801~hmac=82d52607fcba0da0a7f1d926aeab0ecc9f8a34b565ff87990f729037e920a4a3";
     } else {
-        gatito.src = "https://i.pinimg.com/originals/a9/f0/41/a9f041c3a16b4de92b5480dca450f2c2.jpg";
+        gatito.src = "img/señal.png";
         tituloMensaje.textContent = "Ningún mensaje encontrado";
         parrafo.textContent = "Ingresa el párrafo que deseas encriptar o desencriptar";
         alert("Debes de ingresar un texto!");
         }
 
-    }
+}
+
+function copyText() {
+    let texto = document.getElementById("texto").value;
+    const textToCopy = texto;
+  
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        console.log("Texto copiado al portapapeles: ", textToCopy);
+        alert("Texto copiado al portapapeles");
+      })
+      .catch((error) => {
+        console.error("Error al copiar el texto: ", error);
+        alert("No se pudo copiar el texto");
+      });
+  }
+
