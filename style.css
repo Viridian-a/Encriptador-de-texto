@@ -18,7 +18,7 @@
     font-size: 24px;
     margin: 2px;
     top: 3%;
-    left: 22%;
+    left: 21%;
     font-family: 'Poppins', sans-serif;  
     background-color: rgb(98, 46, 175);
     padding: 17px;
@@ -169,7 +169,7 @@
     font-size: 14px;
     margin: 2px;
     top: 88%;
-    left: 19%;
+    left: 17%;
     font-family: 'Poppins', sans-serif;  
     background-color: rgb(98, 46, 175);
     padding: 9px;
@@ -255,17 +255,21 @@
     .general {
         display: flex;
         flex-direction: row;
+        
     }
 
     .contenedorIzq {
         width: 100%;
     }
-
+    .titulopagina {
+        padding: 7px;
+        left: 19%;
+    }
     .texto {
         width: 80%;
         height: 60%;
         left: 10%;
-        top: 5%;
+        top: 10%;
     }
 
     .tituloMensaje {
@@ -279,6 +283,14 @@
         font-size: 16px;
     }
 
+    .texto .reglas {
+        font-size: 10px;
+    }
+
+    .reglas #resetButton {
+        left: 76%;
+    }
+
     .buttons {
         width: 80%;
         left: 10%;
@@ -290,6 +302,10 @@
         border-radius: 16px;
     }
 
+    .btn-desencriptar {
+        top: 69%;
+        left: 55%;
+    }
     .btn-desencriptar:hover, .btn-encriptar:hover {
         margin: 0.3%;
         width: 47.5%;
@@ -299,9 +315,11 @@
 
     .contenedorIzq {
         width: 80%;
-        height: 15%;
+        height: 10%;
         left: 10%;
-        top: 80%;
+        top: 76%;
+        
+
     }
 
     .mensajeEncriptado {
@@ -309,8 +327,21 @@
         top: 5%;
     }
 
+    .mensajeEncriptado #tituloMensaje {
+        font-size: 16px;
+    }
+
+    .mensajeEncriptado #parrafo {
+        font-size: 12px;
+        line-height: 10px;
+    }
+
     .contenedorIzq img {
         display: none;
         top: 0;
+    }
+
+    .redes {
+        left: 5%;
     }
  }
